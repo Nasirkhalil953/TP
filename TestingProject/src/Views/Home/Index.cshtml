@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<center><h3>Roles</h3></center>
+<input type="button" class="btn btn-primary" value="Add Role"/>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    <tbody id="getroles"></tbody>
+</table>
+
+
+
+<form id="addrole">
+    <input type="text" class="form-control" name="Name"><br />
+    <input type="button" class="btn btn-success" value="Add" onclick="AddRole()"/>
+</form>
+<script src="~/Wrapper/Role.js"></script>
+
+
+
+
